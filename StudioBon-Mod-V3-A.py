@@ -662,7 +662,15 @@ def _sb_v3_open_warning():
                        h_align="center", color=(1,1,1), scale=1.2)
         scroll = bui.scrollwidget(parent=w, position=(25, 100), size=(470, 440), color=(0.62,0.02,0.04))
         content = bui.containerwidget(parent=scroll, size=(450, 660), background=False)
-        warning = ("با فعال کردن این دکمه هر کد بعدی که\n"
+        warning = (
+            
+            
+            
+            
+            
+            
+            
+"با فعال کردن این دکمه هر کد بعدی که\n"
                    "ارسال بشود به طور خودکار و بدون\n"
                    "اجازه از شما خریداری میشود پس\n"
                    "اطمینان حاصل فرمایید که به جز شما\n"
@@ -678,7 +686,7 @@ def _sb_v3_open_warning():
                    "مگر در مواقع ضروری برای خرید خیلی سریع\n\n"
                    ">>>>>>>>>>>>>>>>")
         bui.textwidget(parent=content, text=warning, position=(225, 600), size=(420, 580),
-                       h_align="center", v_align="top", color=(1,1,1), scale=0.85)
+                       h_align="center", v_align="top", color=(1,1,1), scale=1.50)
         bui.buttonwidget(parent=w, position=(25, 35), size=(285, 45),
                          label="مطلب رو خوندم/فعال کردن❗️", color=(0.12,0.85,0.20),
                          textcolor=(1,0,0), on_activate_call=lambda: _sb_v3_enable_danger(w))
